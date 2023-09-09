@@ -26,7 +26,7 @@ body,html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 .up>.content{
     height: 80%;
@@ -35,6 +35,7 @@ body,html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .up>.content>h1{
     font-family: nasa;
@@ -43,27 +44,31 @@ body,html{
     color: #fff;
 }
 .up>.content>img{
-    width: 55%;
-    height: 40%;
+    width: 60vw;
 }
-select{
+/* select{
     font-family: nasa;
     background-color: transparent;
     outline: none;
     border: none;
     color: #fff;
+} */
+.page1{
+    height: 100vh;
+    width: 100vw;
 }
-option{
+/* option{
     font-family: nasa;
     color: #fff;
-}
+} */
 .lnav{
-    width:30% ;
+    width:29vw ;
 }
 .rnav>button{
     font-family: nasa;
-    width: 16rem;
-    height: 2rem;
+    width: 22rem;
+    height: 4rem;
+    font-size: 1.6rem;
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
@@ -77,9 +82,10 @@ option{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.6rem;
 }
 .up{
-    height: 60vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -94,8 +100,9 @@ option{
 }
 .up>.content>button{
     font-family: nasa;
-    font-size: 1rem;
+    font-size: 1.6rem;
     width: 26rem;
+    font-weight: 800;
     height: 4.4rem;
     /* position: relative;
     top: -19%;
@@ -111,7 +118,11 @@ option{
     color: #fff;
     font-size: 1.6rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
 }
 .bottom{
     height: 100vh;
@@ -128,6 +139,12 @@ option{
     display: flex;
     border-bottom: 1px solid rgba(117, 114, 114, 0.5);
 }
+.img-div{
+    height:900px;width: 250px;position: absoute;z-index: 50;background-color:red;
+}
+#change{
+    object-fit: cover;
+}
 .l{
     display: flex;
     flex-direction: column;
@@ -135,6 +152,7 @@ option{
     height: 100%;
     /* background-color: peru; */
     text-align: center;
+    padding: auto 0px;
     justify-content: center;
 
 }
@@ -146,28 +164,14 @@ option{
     color: #fff;
     font-size: 5rem;
     line-height: 70%;
+    mix-blend-mode: difference;
     letter-spacing: -4px;
 }
 .l>h4{
     font-size:1.6rem;
     font-family: 'Amiri';
     color: #fff;
-
-}
-.l2>h1{
-    
-    text-align: center;
-    font-family: 'Amiri', serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 5rem;
-    line-height: 70%;
-    letter-spacing: -4px;
-}
-.l2>h4{
-    font-size:1.6rem;
-    font-family: 'Amiri';
-    color: #fff;
+    mix-blend-mode: difference;
 
 }
 .r{
@@ -177,6 +181,7 @@ option{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 20px;
     /* background-color: paleturquoise; */
     font-family: 'Amiri';
     font-size: 2rem;
@@ -184,9 +189,79 @@ option{
     color: #fff;
     line-height: 100%;
 }
+.page3>.bottom>h1{
+    font-size: 5rem;
+    color: #fff;
+    font-family: nasa;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 .r>p{
     width: 72%;
 }
+.page3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.swiper {
+    width: 85%;
+    height: 43%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.6rem;
+    color:#fff;
+    background: transparent;
+    font-family: nasa;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  #left>img{
+    height:20rem ;
+    width:15rem ;
+    margin-bottom: 5px;
+  }
+  #right{
+    width: 50%;
+    padding-left: 10px;
+  }
+  #right>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+  }
+  .slideimage{
+    height: 250px;
+    width: 200px;
+
+  }
+  .swiper-slide >.slideimage>.l>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .swiper-slide >h3{
+    margin-top: 20px;
+  }
 @media(max-width:760px){
     .bottom1,.bottom2,.bottom3{
         flex-direction: column;
@@ -195,77 +270,21 @@ option{
     .l,.r{
         width: 100vw;
     }
-}
-/* .r2>p{
-    width: 72%;
-}
-.l2{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: peru;
-    text-align: center;
-    justify-content: center;
-    background-color: slateblue;
-}
-.r2{
-    width: 50%;
-    height: 100%;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: paleturquoise;
-    font-family: 'Amiri';
-    font-size: 2rem;
-    text-align: justify;
-    color: #fff;
-    line-height: 100%;
-    font-weight: 100;
-}
-.l3{
-    width: 50%;
-    height: 100%;
-    background-color: burlywood;
-    display: flex;
-    flex-direction: column;
-    background-color: peru;
-    text-align: center;
-    justify-content: center;
-}
-.l3>h1{
-    
-    text-align: center;
-    font-family: 'Amiri', serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 5rem;
-    line-height: 70%;
-    letter-spacing: -4px;
-}
-.l3>h4{
-    font-size:1.6rem;
-    font-family: 'Amiri';
-    color: #fff;
+    html{
 
+        font-size: 9px;
+    }
 }
-.r3{
-    width: 50%;
-    height: 100%;
-    background-color: chocolate;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: paleturquoise;
-    font-family: 'Amiri';
-    font-size: 2rem;
-    text-align: justify;
-    color: #fff;
-    line-height: 100%;
+@media(max-width:400px){
+    html{
+        font-size: 7px;
+
+    }
 }
-.r3>p{
-    width: 72%;
-} */
+
+@media(max-width:290px){
+    html{
+        font-size: 5px;
+
+    }
+}
