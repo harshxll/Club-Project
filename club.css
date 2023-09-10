@@ -183,7 +183,7 @@ body,html{
     align-items: center;
     padding: 10px 20px;
     /* background-color: paleturquoise; */
-    font-family: 'Amiri';
+    font-family: 'nasa';
     font-size: 2rem;
     text-align: justify;
     color: #fff;
@@ -262,6 +262,18 @@ body,html{
   .swiper-slide >h3{
     margin-top: 20px;
   }
+
+  .bottom1Sponsors{
+    /* background-color: mediumturquoise; */
+    display: flex;
+    backdrop-filter: blur(3px);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
 @media(max-width:760px){
     .bottom1,.bottom2,.bottom3{
         flex-direction: column;
