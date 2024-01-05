@@ -16,7 +16,7 @@ body,html{
 .main{
     width: 100vw;
     /* background-color: red; */
-    background-image: url(https://s3-alpha-sig.figma.com/img/31e5/93c3/a0aa8454a090e487bc2a1a0977fb4835?Expires=1694995200&Signature=Pwnj-xSnwofsgaTBRycoeYiaszzjZHcE-0kj7mBvAKeY0WXUZX~TLMknbWIHR6LVR22BX8t-g3hS3TRRcLhM3pyYbD1llM2-VCe~6tfjtGsug0ppnYFpLIuvNgr2IO8J1roIMSZYTmy7U7ej42YXiWZuohkV~w5TXtVTPrFU4b9gpPsP1HktitiuD52WZXL7N8-5dSBYIPY-ZhhRAnpKNwuXV63LNHFJDX8SL-kTLjF~igSedUkyUTlQy1bofYElGeiXpQJbqs0S9dpMC-XxLrtttu9Tc~JdHmPXB-hjahvtov2Auyl0iNeHEJstZQX7Yy0DniOc23V8BWd5MFNQVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-image: url(https://plus.unsplash.com/premium_photo-1676776906360-098c7dd38c2b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2V8ZW58MHx8MHx8fDA%3D);
 }
 .up>nav{
     height: 15%;
